@@ -197,13 +197,7 @@
       --font-level: 6;
       margin: auto 0;
       text-align: center;
-      color: #222;
-      font-weight: 200;
     }
-  }
-
-  [data-theme='dark'] section:last-of-type h2 {
-    color: #ccc;
   }
 
   main {
