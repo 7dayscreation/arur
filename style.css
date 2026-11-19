@@ -166,14 +166,18 @@
     padding-left: 5rem;
   }
   section:last-of-type {
-    min-height: calc(100vh - 160px);
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     place-items: center;
     width: 100%;
     justify-content: center;
+    gap: 3rem;
+    padding-inline: 1.5rem;
 
     h2 {
       --font-level: 6;
+      margin: 0;
     }
   }
   main {
@@ -352,11 +356,10 @@ div.tp-dfwv {
 /* ── Contact ── */
 .coming-contact {
   width: 100%;
-  padding-block: 2rem 4rem;
+  padding-block: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.9;
 }
 
 .coming-contact__grid {
@@ -364,7 +367,7 @@ div.tp-dfwv {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem 5rem;
+  gap: 2rem 5rem;
   width: 100%;
   max-width: 650px;
   padding-inline: 1.5rem;
@@ -376,40 +379,38 @@ div.tp-dfwv {
   align-items: center;
   gap: 0.4rem;
   text-align: center;
-  min-width: 200px;
+  min-width: 180px;
 }
 
 .coming-contact__label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: color-mix(in srgb, canvasText 50%, transparent);
+  color: #888;
   font-weight: 300;
 }
 
 .coming-contact__link {
-  color: canvasText;
+  color: #ccc;
   font-size: clamp(0.95rem, 1.25vw, 1.15rem);
   font-weight: 200;
   letter-spacing: 0.05em;
   text-decoration: none;
-  border-bottom: 1px solid color-mix(in srgb, canvasText 30%, transparent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   padding-bottom: 2px;
-  transition: opacity 0.2s ease, border-color 0.2s ease;
+  transition: opacity 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .coming-contact__link:hover,
 .coming-contact__link:focus-visible {
-  opacity: 0.7;
-  border-color: canvasText;
+  opacity: 1;
+  color: #fff;
+  border-color: #fff;
 }
 
 @media (max-width: 520px) {
-  .coming-contact {
-    padding-block: 1.5rem 3rem;
-  }
   .coming-contact__grid {
-    gap: 1.75rem;
+    gap: 1.5rem;
   }
   .coming-contact__col {
     min-width: 100%;

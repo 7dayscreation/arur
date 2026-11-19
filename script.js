@@ -41,11 +41,11 @@ const update = () => {
     gsap.set(items, { opacity: 1 });
     gsap.set(document.documentElement, { '--chroma': 0 });
   } else {
-    gsap.set(items, { opacity: i => i !== 0 ? 0.2 : 1 });
-    dimmerScrub.enable(true, true);
-    scrollerScrub.enable(true, true);
-    chromaEntry.scrollTrigger.enable(true, true);
-    chromaExit.scrollTrigger.enable(true, true);
+    if (items) gsap.set(items, { opacity: i => i !== 0 ? 0.2 : 1 });
+    dimmerScrub?.enable(true, true);
+    scrollerScrub?.enable(true, true);
+    chromaEntry?.scrollTrigger?.enable(true, true);
+    chromaExit?.scrollTrigger?.enable(true, true);
   }
 };
 
