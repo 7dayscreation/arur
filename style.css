@@ -315,6 +315,10 @@
       'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
     font-weight: 100;
     /* super thin */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   body::before {
@@ -412,6 +416,10 @@ div.tp-dfwv {
   text-decoration: none;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.4);
   padding-bottom: 3px;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
   transition: opacity 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
